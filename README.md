@@ -49,6 +49,4 @@ Author
 William Nsambu
 Software & Data Engineer (.NET | Cloud-Native Applications | Scalable Data Solutions)
 
-🌐 LinkedIn: www.linkedin.com/in/william-nsambu-a5467ab2
-
-💻 GitHub: https://github.com/williamnsambu
+🌐 LinkedIn: www.linkedin.com/in/william-nsambu-a5467ab2 | 💻 GitHub: https://github.com/williamnsambu
