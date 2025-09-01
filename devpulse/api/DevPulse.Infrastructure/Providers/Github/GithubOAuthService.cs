@@ -25,7 +25,7 @@ public sealed class GithubOAuthService : IOAuthService
     public string GetAuthorizationUrl(string redirectUri, string codeChallenge)
     {
         var state = Base64Url(RandomBytes(16));
-        // You will persist state on the client or session; here we just include it in the URL.
+        // we will persist state on the client or session; here we just include it in the URL.
         var url =
             $"https://github.com/login/oauth/authorize" +
             $"?client_id={Uri.EscapeDataString(_opts.ClientId)}" +

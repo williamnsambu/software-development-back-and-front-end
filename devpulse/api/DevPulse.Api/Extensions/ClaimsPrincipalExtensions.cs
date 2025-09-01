@@ -1,17 +1,23 @@
+using System;
 using System.Security.Claims;
 
-namespace DevPulse.Api.Extensions;
-
-public static class ClaimsPrincipalExtensions
+namespace DevPulse.Api.Extensions
 {
-    public static Guid GetUserId(this ClaimsPrincipal user)
+    public static class ClaimsPrincipalExtensions
     {
-        var id = user.FindFirstValue(ClaimTypes.NameIdentifier)
-                 ?? user.FindFirstValue("sub");
+        public static Guid GetUserId(this ClaimsPrincipal user)
+        {
+            // Prefer NameIdentifier (nameid); fall back to "sub"
+            var raw = user.FindFirstValue(ClaimTypes.NameIdentifier)
+                   ?? user.FindFirstValue("sub");
 
-        if (string.IsNullOrWhiteSpace(id))
-            throw new UnauthorizedAccessException("User id claim missing.");
+            if (string.IsNullOrWhiteSpace(raw))
+                throw new UnauthorizedAccessException("Missing user id claim.");
 
-        return Guid.Parse(id);
+            if (!Guid.TryParse(raw, out var id))
+                throw new UnauthorizedAccessException("Invalid user id claim.");
+
+            return id;
+        }
     }
 }

@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: rgb(10 10 10);
+}
+
+/* simple, readable default */
+html, body, #root {
+  height: 100%;
+}
+body {
+  background: rgb(10 10 10);
+  color: rgb(245 245 245);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

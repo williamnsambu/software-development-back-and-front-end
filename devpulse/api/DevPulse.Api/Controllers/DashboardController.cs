@@ -1,7 +1,6 @@
+using DevPulse.Application.Abstractions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using DevPulse.Application.Abstractions;
-using DevPulse.Application.Dtos.Dashboard;
 using DevPulse.Api.Extensions;
 
 namespace DevPulse.Api.Controllers;
@@ -15,6 +14,9 @@ public class DashboardController : ControllerBase
     public DashboardController(IDashboardService svc) => _svc = svc;
 
     [HttpGet]
-    public async Task<ActionResult<DashboardVm>> Get()
-        => Ok(await _svc.GetDashboardAsync(User.GetUserId()));
+    public async Task<IActionResult> Get()
+    {
+        var userId = User.GetUserId(); // from ClaimsPrincipalExtensions
+        return Ok(await _svc.GetDashboardAsync(userId));
+    }
 }
