@@ -1,3 +1,4 @@
 .DS_Store
 *.dll
 devpulse/api/appsettings.Development.json
+*.dll
