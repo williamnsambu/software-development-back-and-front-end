@@ -6,7 +6,7 @@ using DevPulse.Application.Abstractions;
 using DevPulse.Application.Options;
 using Microsoft.Extensions.Options;
 
-namespace DevPulse.Infrastructure.Services.Weather;
+namespace DevPulse.Infrastructure.Services.OpenWeather;
 
 public sealed class OpenWeatherClient : IWeatherClient
 {

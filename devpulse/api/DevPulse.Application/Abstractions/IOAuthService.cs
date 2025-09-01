@@ -4,7 +4,7 @@ namespace DevPulse.Application.Abstractions;
 
 public interface IOAuthService
 {
-    // Build the user-facing authorize URL (PKCE uses a code_challenge you generate in the SPA)
+    // Build the user-facing authorize URL (PKCE uses a code_challenge we generate in the SPA)
     string GetAuthorizationUrl(string redirectUri, string codeChallenge);
 
     // After callback: exchange code -> access/refresh token

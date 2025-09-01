@@ -1,20 +1,26 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json;
 using DevPulse.Application.Abstractions;
 using DevPulse.Application.Dtos.OAuth;
 using DevPulse.Domain.Entities;
 using DevPulse.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json;
+using Quartz; // <-- IMPORTANT
 
 namespace DevPulse.Infrastructure.Services;
 
 public sealed class ProviderService : IProviderService
 {
     private readonly AppDbContext _db;
+    private readonly ISchedulerFactory _schedulers;
 
-    public ProviderService(AppDbContext db) => _db = db;
+    public ProviderService(AppDbContext db, ISchedulerFactory schedulers)
+    {
+        _db = db;
+        _schedulers = schedulers;
+    }
 
     public async Task<Guid> UpsertGithubConnectionAsync(UserInfoDto user, OAuthToken token)
     {
@@ -97,9 +103,15 @@ public sealed class ProviderService : IProviderService
         await _db.SaveChangesAsync();
     }
 
-    public Task EnqueueSyncAsync(Guid userId)
+    // Trigger the Quartz sync job immediately.
+    public async Task EnqueueSyncAsync(Guid userId)
     {
-        // Hook Quartz/Hangfire job here
-        return Task.CompletedTask;
+        var scheduler = await _schedulers.GetScheduler();
+
+        // If later we want per-user sync, pass JobData and read it in the job:
+        // var data = new JobDataMap { { "UserId", userId } };
+        // await scheduler.TriggerJob(new JobKey("SyncJob"), data);
+
+        await scheduler.TriggerJob(new JobKey("SyncJob"));
     }
 }

@@ -2,10 +2,11 @@ using System;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models; // <-- added
+using Microsoft.OpenApi.Models;
 using Quartz;
 using DevPulse.Infrastructure;
 using DevPulse.Application;
+using DevPulse.Infrastructure.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
 var cfg = builder.Configuration;
@@ -85,19 +86,42 @@ builder.Services.AddAuthentication(o =>
 
 builder.Services.AddAuthorization();
 
-// Quartz (optional)
-builder.Services.AddQuartz();
+// Quartz schedule (every 15 minutes)
+builder.Services.AddQuartz(q =>
+{
+    var jobKey = new JobKey("SyncJob");
+    q.AddJob<SyncJob>(opts => opts.WithIdentity(jobKey));
+
+    q.AddTrigger(t => t
+        .ForJob(jobKey)
+        .WithIdentity("SyncJob-trigger")
+        .WithSimpleSchedule(s => s.WithInterval(TimeSpan.FromMinutes(15)).RepeatForever()));
+});
 builder.Services.AddQuartzHostedService(opt => opt.WaitForJobsToComplete = true);
 
 // Wiring
 builder.Services.AddDevPulseInfrastructure(cfg);
 builder.Services.AddDevPulseApplication();
 
-// CORS
+// CORS for SPA — NOTE AllowCredentials() is required for cookies (OAuth state)
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// HttpClient (used by GitHub OAuth calls)
+builder.Services.AddHttpClient();
+
+// CORS for SPA
 builder.Services.AddCors(p => p.AddPolicy("spa",
-    b => b.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod()));
+    b => b
+        .WithOrigins("http://localhost:5173")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials()
+));
 
 var app = builder.Build();
+app.UseCors("spa");
 
 app.UseSwagger();
 app.UseSwaggerUI();

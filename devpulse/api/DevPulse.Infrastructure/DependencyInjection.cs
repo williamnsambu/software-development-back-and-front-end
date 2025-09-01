@@ -9,7 +9,7 @@ using DevPulse.Infrastructure.Security;
 using DevPulse.Infrastructure.Services;
 using Polly;
 using Polly.Extensions.Http;
-using DevPulse.Infrastructure.Services.Weather;
+using DevPulse.Infrastructure.Providers.OpenWeather;
 
 namespace DevPulse.Infrastructure;
 
@@ -29,6 +29,9 @@ public static class DependencyInjection
         services.Configure<JiraOptions>(cfg.GetSection("Jira"));
         services.Configure<OpenWeatherOptions>(cfg.GetSection("OpenWeather"));
 
+        // Weather (real OpenWeather client)
+        services.Configure<OpenWeatherOptions>(cfg.GetSection("OpenWeather"));
+
         // HttpClient(s) + Polly
         services.AddHttpClient("github")
             .AddPolicyHandler(HttpPolicyExtensions
@@ -36,7 +39,14 @@ public static class DependencyInjection
                 .WaitAndRetryAsync(3, i => TimeSpan.FromMilliseconds(200 * i)));
 
         // Weather (real OpenWeather client)
-        services.AddHttpClient<IWeatherClient, OpenWeatherClient>();
+
+        services.AddHttpClient("openweather", c =>
+        {
+            c.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5/");
+            c.Timeout = TimeSpan.FromSeconds(10);
+        });
+
+        services.AddScoped<IWeatherClient, OpenWeatherClient>();
 
         // Concrete infra services
         services.AddScoped<GithubWebhookService>();

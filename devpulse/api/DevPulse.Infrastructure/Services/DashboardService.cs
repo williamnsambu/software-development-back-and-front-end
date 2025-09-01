@@ -22,17 +22,19 @@ namespace DevPulse.Infrastructure.Services
 
         public async Task<DashboardVm> GetDashboardAsync(Guid userId, CancellationToken ct = default)
         {
-            // counts
-            var repoCountTask = _db.Repositories
+            // Run sequentially to avoid DbContext concurrency
+            var repoCount = await _db.Repositories
+                .AsNoTracking()
                 .Where(r => r.UserId == userId)
                 .CountAsync(ct);
 
-            var issueCountTask = _db.Issues
+            var issueCount = await _db.Issues
+                .AsNoTracking()
                 .Where(i => i.UserId == userId || i.Repo!.UserId == userId)
                 .CountAsync(ct);
 
-            // latest 5 PRs for user’s repos
-            var prsTask = _db.PullRequests
+            var prs = await _db.PullRequests
+                .AsNoTracking()
                 .Where(pr => pr.Repo.UserId == userId)
                 .OrderByDescending(pr => pr.UpdatedAt)
                 .Take(5)
@@ -48,8 +50,8 @@ namespace DevPulse.Infrastructure.Services
                 })
                 .ToListAsync(ct);
 
-            // latest 5 issues for user’s repos or user
-            var issuesTask = _db.Issues
+            var issues = await _db.Issues
+                .AsNoTracking()
                 .Where(i => i.UserId == userId || i.Repo!.UserId == userId)
                 .OrderByDescending(i => i.UpdatedAt)
                 .Take(5)
@@ -63,26 +65,20 @@ namespace DevPulse.Infrastructure.Services
                 })
                 .ToListAsync(ct);
 
-            // optional weather (safe to swallow errors in demo if provider unset)
             double? tempC = null;
             try
             {
                 tempC = await _weather.GetCurrentTempCAsync("San Francisco", "US", ct);
             }
-            catch
-            {
-                // ignore if provider not configured
-            }
-
-            await Task.WhenAll(repoCountTask, issueCountTask, prsTask, issuesTask);
+            catch { /* optional: ignore weather errors in demo */ }
 
             return new DashboardVm
             {
                 UserId = userId,
-                RepoCount = repoCountTask.Result,
-                IssueCount = issueCountTask.Result,
-                PRs = prsTask.Result,
-                Issues = issuesTask.Result,
+                RepoCount = repoCount,
+                IssueCount = issueCount,
+                PRs = prs,
+                Issues = issues,
                 Weather = tempC
             };
         }
