@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DevPulse.Application/1.0.0": {
+        "dependencies": {
+          "DevPulse.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DevPulse.Application.dll": {}
+        }
+      },
+      "DevPulse.Domain/1.0.0": {
+        "runtime": {
+          "DevPulse.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevPulse.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevPulse.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
