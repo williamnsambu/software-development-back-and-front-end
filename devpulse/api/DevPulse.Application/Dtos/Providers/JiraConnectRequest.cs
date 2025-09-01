@@ -1,4 +1,7 @@
-namespace DevPulse.Application.Dtos.Providers
+namespace DevPulse.Application.Dtos.Providers;
+
+public sealed class JiraConnectRequest
 {
-    public sealed record JiraConnectRequest(string Email, string ApiToken);
+    public string Email { get; init; } = string.Empty;
+    public string ApiToken { get; init; } = string.Empty;
 }

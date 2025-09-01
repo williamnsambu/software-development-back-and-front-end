@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TLyTE8z4hlw=",
+  "dgSpecHash": "QOOLCsjz7vs=",
   "success": true,
   "projectFilePath": "/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/DevPulse.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/williamnsambu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.8/microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

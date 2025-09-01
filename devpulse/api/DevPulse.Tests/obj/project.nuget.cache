@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+9DnvouimVY=",
+  "dgSpecHash": "BnIclatUeic=",
   "success": true,
   "projectFilePath": "/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Tests/DevPulse.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/williamnsambu/.nuget/packages/azure.core/1.47.1/azure.core.1.47.1.nupkg.sha512",
     "/Users/williamnsambu/.nuget/packages/azure.identity/1.14.2/azure.identity.1.14.2.nupkg.sha512",
+    "/Users/williamnsambu/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/williamnsambu/.nuget/packages/coverlet.collector/6.0.4/coverlet.collector.6.0.4.nupkg.sha512",
     "/Users/williamnsambu/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/9.0.8/microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512",
     "/Users/williamnsambu/.nuget/packages/microsoft.bcl.asyncinterfaces/8.0.0/microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",

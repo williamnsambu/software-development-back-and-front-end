@@ -1,3 +1,9 @@
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.csproj.AssemblyReference.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.AssemblyInfoInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.AssemblyInfo.cs
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.sourcelink.json
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Infrastructure.deps.json
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Infrastructure.dll
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Infrastructure.pdb
@@ -5,12 +11,6 @@
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Domain.dll
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Application.pdb
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/bin/Debug/net10.0/DevPulse.Domain.pdb
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.csproj.AssemblyReference.cache
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.AssemblyInfoInputs.cache
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.AssemblyInfo.cs
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.csproj.CoreCompileInputs.cache
-/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.sourcelink.json
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.73B961CD.Up2Date
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/DevPulse.Infrastructure.dll
 /Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Infrastructure/obj/Debug/net10.0/refint/DevPulse.Infrastructure.dll

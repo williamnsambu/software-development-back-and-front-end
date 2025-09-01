@@ -1,7 +1,6 @@
-namespace DevPulse.Application.Options
+namespace DevPulse.Application.Options;
+
+public sealed class OpenWeatherOptions
 {
-    public sealed class OpenWeatherOptions
-    {
-        public string ApiKey { get; init; } = "";
-    }
+    public string ApiKey { get; init; } = string.Empty;
 }
