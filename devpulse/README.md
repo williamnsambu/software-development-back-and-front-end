@@ -41,6 +41,13 @@ Secrets are injected with Infisical. You’ll need:
 	•	INFISICAL_PROJECT_ID
 	•	INFISICAL_TOKEN
 
+Set Infisical env vars (one-time per shell)
+
+```
+export INFISICAL_PROJECT_ID=c335b1cb-767c-450b-adcc-7fcb08df1b33
+export INFISICAL_TOKEN='st.xxxx...your-long-token...'
+```
+
 Run commands like this:
 
 ```infisical run \
@@ -49,7 +56,11 @@ Run commands like this:
   --env=development -- \
   dotnet run --project DevPulse.Api/DevPulse.Api.csproj --urls "http://localhost:5140"
 ```
-
+You should see logs ending with:
+```
+	Now listening on: http://localhost:5140
+	Application started. Press Ctrl+C to shut down.
+```
 ⸻
 
 SQL Server in Docker
@@ -109,25 +120,43 @@ Running the API
 
 Start the API with secrets injected:
 
+Set Infisical env vars (one-time per shell)
+
+```
+export INFISICAL_PROJECT_ID=c335b1cb-767c-450b-adcc-7fcb08df1b33
+export INFISICAL_TOKEN='st.xxxx...your-long-token...'
+```
+
+Then
+
 ```infisical run \
   --projectId "$INFISICAL_PROJECT_ID" \
   --token "$INFISICAL_TOKEN" \
   --env=development -- \
   dotnet run --project DevPulse.Api/DevPulse.Api.csproj --urls "http://localhost:5140"
 ```
-
+You should see logs ending with:
+```
+	Now listening on: http://localhost:5140
+	Application started. Press Ctrl+C to shut down.
+```
 ⸻
 
 Testing Endpoints
 	•	Health check:
 
 `curl http://localhost:5140/healthz`
-
+Expect:
+	`{"ok":true,"at":"..."}`
 
    •	Swagger UI:
 Open http://localhost:5140/swagger
 
-   •	Register a user:
+Register Swagger UI
+
+Swagger: POST /api/auth/register with JSON body:
+
+Or Register a user using command line:
 
 ```curl -X POST http://localhost:5140/api/auth/register \
   -H "Content-Type: application/json" \
