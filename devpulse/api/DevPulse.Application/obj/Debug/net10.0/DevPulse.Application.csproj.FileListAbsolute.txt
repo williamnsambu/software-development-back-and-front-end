@@ -1,0 +1,16 @@
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/bin/Debug/net10.0/DevPulse.Application.deps.json
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/bin/Debug/net10.0/DevPulse.Application.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/bin/Debug/net10.0/DevPulse.Application.pdb
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/bin/Debug/net10.0/DevPulse.Domain.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/bin/Debug/net10.0/DevPulse.Domain.pdb
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.csproj.AssemblyReference.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.AssemblyInfoInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.AssemblyInfo.cs
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.csproj.CoreCompileInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.sourcelink.json
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.F867F71D.Up2Date
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/refint/DevPulse.Application.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/DevPulse.Application.pdb
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/devpulse/api/DevPulse.Application/obj/Debug/net10.0/ref/DevPulse.Application.dll
