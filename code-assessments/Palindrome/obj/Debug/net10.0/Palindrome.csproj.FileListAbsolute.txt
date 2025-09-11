@@ -1,0 +1,15 @@
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/bin/Debug/net10.0/Palindrome
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/bin/Debug/net10.0/Palindrome.deps.json
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/bin/Debug/net10.0/Palindrome.runtimeconfig.json
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/bin/Debug/net10.0/Palindrome.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/bin/Debug/net10.0/Palindrome.pdb
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.AssemblyInfoInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.AssemblyInfo.cs
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.csproj.CoreCompileInputs.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.sourcelink.json
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/refint/Palindrome.dll
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.pdb
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/Palindrome.genruntimeconfig.cache
+/Users/williamnsambu/Documents/GitHub/software-development-back-and-front-end/code-assessments/Palindrome/obj/Debug/net10.0/ref/Palindrome.dll
