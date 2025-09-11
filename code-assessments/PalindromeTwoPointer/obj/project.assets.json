@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeWithoutUsingLibraries\\Palindrome.csproj",
-      "projectName": "Palindrome",
-      "projectPath": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeWithoutUsingLibraries\\Palindrome.csproj",
+      "projectUniqueName": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeTwoPointer\\PalindromeTwoPointer.csproj",
+      "projectName": "PalindromeTwoPointer",
+      "projectPath": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeTwoPointer\\PalindromeTwoPointer.csproj",
       "packagesPath": "C:\\Users\\wxn2229\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeWithoutUsingLibraries\\obj\\",
+      "outputPath": "C:\\Dev\\software-development-back-and-front-end\\code-assessments\\PalindromeTwoPointer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
