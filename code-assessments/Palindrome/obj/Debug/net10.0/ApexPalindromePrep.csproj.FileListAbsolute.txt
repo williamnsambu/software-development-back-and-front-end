@@ -1,0 +1,14 @@
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.AssemblyInfoInputs.cache
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.AssemblyInfo.cs
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.csproj.CoreCompileInputs.cache
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/bin/Debug/net10.0/ApexPalindromePrep
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/bin/Debug/net10.0/ApexPalindromePrep.deps.json
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/bin/Debug/net10.0/ApexPalindromePrep.runtimeconfig.json
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/bin/Debug/net10.0/ApexPalindromePrep.dll
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/bin/Debug/net10.0/ApexPalindromePrep.pdb
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.dll
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/refint/ApexPalindromePrep.dll
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.pdb
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ApexPalindromePrep.genruntimeconfig.cache
+/Users/williamnsambu/Documents/Dev/code-assessments/ApexPalindromePrep/obj/Debug/net10.0/ref/ApexPalindromePrep.dll
