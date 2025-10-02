@@ -1,4 +1,16 @@
 .DS_Store
 *.dll
 devpulse/api/appsettings.Development.json
-*.dll
+devpulse/api/bin
+devpulse/api/obj
+devpulse/api/DevPulse.Tests/bin
+devpulse/api/DevPulse.Api/bin
+devpulse/api/DevPulse.Api/obj
+devpulse/api/DevPulse.Application/bin
+devpulse/api/DevPulse.Application/obj
+devpulse/api/DevPulse.Domain/bin
+devpulse/api/DevPulse.Domain/obj
+devpulse/api/DevPulse.Infrastructure/bin
+devpulse/api/DevPulse.Infrastructure/obj
+devpulse/api/DevPulse.Tests/bin
+devpulse/api/DevPulse.Tests/obj
