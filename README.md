@@ -23,27 +23,34 @@ Roadmap
 
 DevPulse Full-stack Project Features
 
-	Authentication & User Management (in progress)
+	Backend:
 	
-		•	Secure login & registration (JWT/OAuth2) -- Implemented
-		•	Role-based authorization -- Planed
-		•	User profile management -- Planned
-	
-	Task/Project Management
-	
-		•	CRUD operations for projects and tasks -- Planned
-		•	Real-time updates (SignalR/WebSockets planned) -- Planned
-		•	Multi-user collaboration -- Implemented
-	
-	API Integrations
-	
-		•	RESTful APIs for backend communication -- Implemented
-		•	Integrations with external services -- Implemented
+		Authentication & User Management (in progress)
+		
+			•	Secure login & registration (JWT/OAuth2) -- Implemented
+			•	Role-based authorization -- Planed
+			•	User profile management -- Planned
+		
+		Task/Project Management
+		
+			•	CRUD operations for projects and tasks -- Planned
+			•	Real-time updates (SignalR/WebSockets planned) -- Planned
+			•	Multi-user collaboration -- Implemented
+		
+		API Integrations
+		
+			•	RESTful APIs for backend communication -- Implemented
+			•	Integrations with external services -- Implemented
 
-	Frontend
-		•	Login Page -- Implemented
-		•	Dashboard -- Implemented
-		•	More to come
+	Frontend:
+	
+		User
+			•	Login Page -- Implemented
+
+		Reporting
+			•	Dashboard -- Implemented
+		
+		More to come
 
 Portfolio Website (HTML5 only): Showcases projects, skills, education, and résumé. Path: `website-using-html5-only/portfolio/index.html`
 
