@@ -41,8 +41,9 @@ DevPulse Full-stack Project Features
 		•	Integrations with external services -- Implemented
 
 	Frontend
-		•	Login Page
-		•	Dashboard
+		•	Login Page -- Implemented
+		•	Dashboard -- Implemented
+		•	More to come
 
 Portfolio Website (HTML5 only): Showcases projects, skills, education, and résumé. Path: `website-using-html5-only/portfolio/index.html`
 
