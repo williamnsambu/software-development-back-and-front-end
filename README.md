@@ -11,40 +11,42 @@ Tech Stack
 
 ⸻
 
-Project Features
-
-Authentication & User Management (in progress)
-
-	•	Secure login & registration (JWT/OAuth2 planned)
-	•	Role-based authorization
-	•	User profile management
-
-Task/Project Management (coming soon)
-
-	•	CRUD operations for projects and tasks
-	•	Real-time updates (SignalR/WebSockets planned)
-	•	Multi-user collaboration
-
-API Integrations
-
-	•	RESTful APIs for backend communication
-	•	Planned: integrations with external services
-
-Portfolio Website (HTML5 only)
-
-	•	Personal portfolio page built entirely with semantic HTML5 and CSS
-	•	Showcases projects, skills, education, and résumé
-	•	📂 Path: website-using-html5-only/portfolio/index.html
-
-⸻
-
 Roadmap
 
-	•	Setup base project structure (backend + frontend)
+	•	Setup base project structure (backend + frontend). Project Name **DevPulse**
 	•	Portfolio website using HTML5 only
 	•	Implement authentication & authorization layer
 	•	Build frontend with React.js (components + state management)
 	•	Integrate backend with frontend for full-stack flow
+
+⸻
+
+DevPulse Full-stack Project Features
+
+	Authentication & User Management (in progress)
+	
+		•	Secure login & registration (JWT/OAuth2) -- Implemented
+		•	Role-based authorization -- Planed
+		•	User profile management -- Planned
+	
+	Task/Project Management
+	
+		•	CRUD operations for projects and tasks -- Planned
+		•	Real-time updates (SignalR/WebSockets planned) -- Planned
+		•	Multi-user collaboration -- Implemented
+	
+	API Integrations
+	
+		•	RESTful APIs for backend communication -- Implemented
+		•	Integrations with external services -- Implemented
+
+	Frontend
+		•	Login Page
+		•	Dashboard
+
+Portfolio Website (HTML5 only): Showcases projects, skills, education, and résumé. Path: `website-using-html5-only/portfolio/index.html`
+
+	•	Personal portfolio page built entirely with semantic HTML5 and CSS -- Implemented
 
 ⸻
 
