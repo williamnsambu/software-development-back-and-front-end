@@ -13,10 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: devpulse
-
     steps:
     - uses: actions/checkout@v4
 
@@ -27,9 +23,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore DevPulse.sln
+      working-directory: devpulse
 
     - name: Build
       run: dotnet build DevPulse.sln --no-restore
+      working-directory: devpulse
 
     - name: Test
       run: dotnet test DevPulse.sln --no-build --verbosity normal
+      working-directory: devpulse
