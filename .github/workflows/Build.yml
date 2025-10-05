@@ -23,12 +23,12 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore DevPulse.sln
-      working-directory: ./devpulse
+      working-directory: ./devpulse/api
 
     - name: Build
       run: dotnet build DevPulse.sln --no-restore
-      working-directory: ./devpulse
+      working-directory: ./devpulse/api
 
     - name: Test
       run: dotnet test DevPulse.sln --no-build --verbosity normal
-      working-directory: ./devpulse
+      working-directory: ./devpulse/api
